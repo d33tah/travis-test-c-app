@@ -1,2 +1,2 @@
 language: c
-install: ./build-afl.sh
+install: wget "http://lcamtuf.coredump.cx/afl/releases/afl-1.87b.tgz" -O- | tar zxf - ; make PREFIX=/tmp/afl install
