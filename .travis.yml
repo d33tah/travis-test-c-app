@@ -1,2 +1,2 @@
 language: c
-install: sudo apt-get install afl
+install: wget "http://lcamtuf.coredump.cx/afl/releases/afl-latest.tgz" -O- | tar zxvf - ; cd afl-*; ./configure --prefix=/tmp && make && make install
