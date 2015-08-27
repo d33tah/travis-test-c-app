@@ -1,3 +1,3 @@
-all: test
-test:
-	true
+all: app
+test: app
+	echo '2' | ./app
