@@ -1,2 +1,2 @@
 language: c
-install: apt-get install afl
+install: sudo apt-get install afl
