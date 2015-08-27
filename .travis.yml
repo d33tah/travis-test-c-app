@@ -1,2 +1,2 @@
 language: c
-install: wget "http://lcamtuf.coredump.cx/afl/releases/afl-1.87b.tgz" -O- | tar zxf - ; pushd . ; cd afl-*; make PREFIX=/tmp/afl install; popd
+install: wget "http://lcamtuf.coredump.cx/afl/releases/afl-1.87b.tgz" -O- | tar zxf - ; pushd . ; cd afl-*; make PREFIX=/tmp/afl install; echo core | sudo tee /proc/sys/kernel/core_pattern; popd
